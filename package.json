@@ -1,0 +1,31 @@
+{
+  "name": "dsms",
+  "version": "1.0.0",
+  "description": "This is a driving school managemnet system made for Bnajara driving school as a part of the 5th sem enterprenuarship mini project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muzaphetamine/dsms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/muzaphetamine/dsms/issues"
+  },
+  "homepage": "https://github.com/muzaphetamine/dsms#readme",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "ejs": "^7.0.1",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
