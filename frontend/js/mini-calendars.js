@@ -20,7 +20,8 @@ function buildMiniCalendar(container, year, month) {
             month === today.getMonth() &&
             year === today.getFullYear();
         if (isToday) classes.push('today');
-        html += `<div class="${classes.join(' ')}">${day}</div>`;
+        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        html += `<div class="${classes.join(' ')}" data-date="${dateStr}">${day}</div>`;
     }
 
     container.innerHTML = html + `</div>`;
@@ -30,4 +31,11 @@ function buildMiniCalendar(container, year, month) {
     const now = new Date();
     const target = new Date(now.getFullYear(), now.getMonth() + offset, 1);
     buildMiniCalendar(document.getElementById(id), target.getFullYear(), target.getMonth());
+});
+
+document.querySelector('.right-panel').addEventListener('click', (e) => {
+    const cell = e.target.closest('[data-date]');
+    if (!cell) return;
+    const [y, m, d] = cell.dataset.date.split('-').map(Number);
+    jumpToDate(new Date(y, m - 1, d));
 });

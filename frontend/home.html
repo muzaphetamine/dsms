@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/mini-calendar.css">
     <link rel="stylesheet" href="css/add-menu.css">
+    <link rel="stylesheet" href="css/calendar.css">
     <title>Home</title>
 </head>
 
@@ -22,11 +23,12 @@
         </aside>
 
         <nav class="navbar">
-            <button><img src="" alt="bell"></button>&nbsp;
-            <button><img src="" alt="profile"></button>
+            <input type="date" id="date-picker">
+            <button id="bell-btn"><img id="bell-icon" src="images/bell-icon.png" alt="bell"></button>&nbsp;
+            <button id="profile-btn"><img id="profile-pic" src="images/profile-pic.jpg" alt="profile"></button>
         </nav>
 
-        <main class="calendar">Slots</main>
+        <main id="calendar" class="calendar"></main>
 
         <aside class="right-panel">
             <div class="mini-cal" id="cal-prev"></div>
@@ -47,6 +49,7 @@
 
     <script src="js/mini-calendars.js"></script>
     <script src="js/add-menu.js"></script>
+    <script src="js/calendar.js"></script>
 </body>
 
 </html>

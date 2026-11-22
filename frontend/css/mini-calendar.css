@@ -34,6 +34,10 @@
     color: #bbb;
 }
 
+.mini-day:hover {
+    cursor: pointer;
+}
+
 .mini-day.today {
     background: #0f91ee79;
     font-weight: 600;

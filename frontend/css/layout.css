@@ -64,3 +64,49 @@ a:hover {
     grid-area: right-panel;
     background-color: rgb(24, 11, 58);
 }
+
+#bell-btn {
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#bell-btn:hover {
+    cursor: pointer;
+}
+
+#bell-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#profile-btn {
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#profile-btn:hover {
+    cursor: pointer;
+}
+
+#profile-pic {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+#date-picker {
+    background: none;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 6px 10px;
+
+}
+
+#date-picker:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px gray;
+}

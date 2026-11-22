@@ -1,0 +1,68 @@
+.calendar {
+    position: relative;
+    padding: 0 20px 20px;
+    overflow-y: auto;
+    overflow-anchor: none;
+    scrollbar-width: none;
+    background-color: rgb(97, 25, 3);
+}
+
+.calendar::-webkit-scrollbar {
+    display: none;
+}
+
+.day {
+    margin-bottom: 24px;
+}
+
+.day-title {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 14px 0 8px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.day-title.today {
+    color: rgb(132, 156, 207);
+}
+
+.slot {
+    display: flex;
+    min-height: 52px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.048);
+}
+
+.slot-time {
+    width: 60px;
+    padding-top: 8px;
+    font-size: 12px;
+}
+
+.slot-body {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px 0;
+}
+
+.chip {
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.dots {
+    padding: 10px 0 0 24px;
+}
+
+.dots i {
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.315);
+}
