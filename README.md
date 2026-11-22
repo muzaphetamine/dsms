@@ -1,1 +1,1 @@
-This is a driving school managemnet system made for Bnajara driving school as a part of the 5th sem enterprenuarship mini project.
+This is a driving school management system made for Banjara Driving School as a part of the 5th Sem Enterprenuership Mini Project.
