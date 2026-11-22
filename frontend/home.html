@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/mini-calendar.css">
+    <link rel="stylesheet" href="css/add-menu.css">
     <title>Home</title>
 </head>
 
@@ -26,8 +28,25 @@
 
         <main class="calendar">Slots</main>
 
-        <aside class="right-panel">months</aside>
+        <aside class="right-panel">
+            <div class="mini-cal" id="cal-prev"></div>
+            <div class="mini-cal" id="cal-curr"></div>
+            <div class="mini-cal" id="cal-next"></div>
+
+            <div class="add-wrap">
+                <div class="add-menu" id="add-menu">
+                    <button data-action="student">Student</button>
+                    <button data-action="instructor">Instructor</button>
+                    <button data-action="vehicle">Vehicle</button>
+                </div>
+                <button class="add-btn" id="add-btn">+ Add</button>
+            </div>
+        </aside>
     </div>
+
+
+    <script src="js/mini-calendars.js"></script>
+    <script src="js/add-menu.js"></script>
 </body>
 
 </html>

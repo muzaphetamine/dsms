@@ -1,0 +1,40 @@
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 12px;
+    overflow-y: auto;
+}
+
+.mini-title {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.mini-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.mini-weekday {
+    font-weight: 600;
+    color: #666;
+}
+
+.mini-day {
+    padding: 3px 0;
+    border-radius: 50%;
+}
+
+.mini-day.sunday {
+    color: #bbb;
+}
+
+.mini-day.today {
+    background: #0f91ee79;
+    font-weight: 600;
+}

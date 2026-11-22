@@ -34,7 +34,7 @@ a:hover {
 .app {
     display: grid;
     height: 100vh;
-    grid-template-columns: 220px 1fr 200px;
+    grid-template-columns: 220px 1fr 240px;
     grid-template-rows: 60px 1fr;
     grid-template-areas:
         "sidebar navbar navbar"
@@ -62,5 +62,5 @@ a:hover {
 
 .right-panel {
     grid-area: right-panel;
-    background-color: brown;
+    background-color: rgb(24, 11, 58);
 }
