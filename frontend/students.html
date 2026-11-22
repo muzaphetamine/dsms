@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/mini-calendar.css">
+    <link rel="stylesheet" href="css/add-menu.css">
+    <title>Student</title>
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <h1>Student</h1>
+            <li>
+                <a href="home.html">Home</a>
+                <a href="vehicles.html">Vehicle</a>
+                <a href="instructors.html">Instructor</a>
+            </li>
+        </aside>
+
+        <nav class="navbar">
+            <button id="bell-btn"><img id="bell-icon" src="images/bell-icon.png" alt="bell"></button>&nbsp;
+            <button id="profile-btn"><img id="profile-pic" src="images/profile-pic.jpg" alt="profile"></button>
+        </nav>
+
+        <main id="student-sec" class="student-sec"></main>
+
+        <aside class="right-panel">
+            <div class="mini-cal" id="cal-prev"></div>
+            <div class="mini-cal" id="cal-curr"></div>
+            <div class="mini-cal" id="cal-next"></div>
+
+            <div class="add-wrap">
+                <div class="add-menu" id="add-menu">
+                    <button data-action="student">Student</button>
+                    <button data-action="instructor">Instructor</button>
+                    <button data-action="vehicle">Vehicle</button>
+                </div>
+                <button class="add-btn" id="add-btn">+ Add</button>
+            </div>
+        </aside>
+    </div>
+
+
+    <script src="js/mini-calendars.js"></script>
+    <script src="js/add-menu.js"></script>
+</body>
+
+</html>
