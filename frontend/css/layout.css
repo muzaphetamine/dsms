@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    font-family: monospace;
+    background-color: #1f1f1f1f;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 25x;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    font-size: 25px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    background-color: rgb(53, 52, 52);
+    font-size: 27px;
+    box-shadow: -2px 2px rgba(0, 0, 0, 0.61);
+}
+
+.app {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 220px 1fr 200px;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+        "sidebar navbar navbar"
+        "sidebar calendar right-panel";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(65, 64, 64);
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: rgb(65, 64, 64);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.calendar {
+    grid-area: calendar;
+}
+
+.right-panel {
+    grid-area: right-panel;
+    background-color: brown;
+}
