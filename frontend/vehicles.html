@@ -7,26 +7,41 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/mini-calendar.css">
     <link rel="stylesheet" href="css/add-menu.css">
+    <link rel="stylesheet" href="css/list-pages.css">
+    <link rel="stylesheet" href="css/modals.css">
     <title>Vehicle</title>
 </head>
 
 <body>
     <div class="app">
         <aside class="sidebar">
-            <h1>Vehicle</h1>
-            <li>
-                <a href="home.html">Home</a>
-                <a href="students.html">Student</a>
-                <a href="instructors.html">Instructor</a>
-            </li>
+            <h1>Vehicles</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="vehicles.html" class="active">Vehicles</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+            </ul>
         </aside>
 
         <nav class="navbar">
-            <button id="bell-btn"><img id="bell-icon" src="images/bell-icon.png" alt="bell"></button>&nbsp;
+            <button id="bell-btn"><img id="bell-icon" src="images/bell-icon.png" alt="bell"></button>
             <button id="profile-btn"><img id="profile-pic" src="images/profile-pic.jpg" alt="profile"></button>
         </nav>
 
-        <main id="vehicle-sec" class="vehicle-sec"></main>
+        <main id="vehicle-sec" class="main-area">
+             <button class="primary-btn" id="add-vehicle-btn">Add Vehicle</button>
+             
+             <div class="tabs-row">
+                <div class="tabs">
+                    <button class="tab active" data-tab="active">Active</button>
+                    <button class="tab" data-tab="deleted">Deleted</button>
+                </div>
+                <input type="search" id="search-input" placeholder="Search active vehicles...">
+            </div>
+            
+            <div class="card-grid" id="vehicle-grid"></div>
+        </main>
 
         <aside class="right-panel">
             <div class="mini-cal" id="cal-prev"></div>
@@ -45,8 +60,15 @@
     </div>
 
 
+    <script src="js/data/vehicles.js"></script>
+    <script src="js/data/instructors.js"></script>
+    <script src="js/data/students.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/data/vehicles.js"></script>
+    <script src="js/api.js"></script>
     <script src="js/mini-calendars.js"></script>
     <script src="js/add-menu.js"></script>
-</body>
+    <script src="js/vehicles.js"></script>
 
 </html>

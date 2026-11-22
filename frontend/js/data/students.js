@@ -1,0 +1,42 @@
+const students = [
+    { id: 1, name: "Muzafar", dob: "2004-03-12", gender: "Male", licenseNo: "LL-KA-2026-0101",
+      instructorId: 1, vehicleId: 1, slot: "9 am - 10 am",
+      enrolledOn: "2026-09-19", status: "active", stage: "DL test on 27/11",
+      sessionsDone: 14, totalSessions: 15, totalFee: 9000, paidFee: 9000,
+      documents: [
+        { name: "Aadhaar", file: "images/profile-pic.jpg", ext: "jpg" },
+        { name: "PAN", file: "images/profile-pic.jpg", ext: "jpg" }
+      ] },
+    { id: 2, name: "Muskan", dob: "2005-07-25", gender: "Female", licenseNo: "LL-KA-2026-0102",
+      instructorId: 2, vehicleId: 2, slot: "9 am - 10 am",
+      enrolledOn: "2026-10-18", status: "active", stage: "Learning",
+      sessionsDone: 9, totalSessions: 15, totalFee: 9000, paidFee: 6000,
+      documents: [
+        { name: "Aadhaar", file: "images/profile-pic.jpg", ext: "jpg" }
+      ] },
+    { id: 3, name: "Rahul", dob: "2003-11-02", gender: "Male", licenseNo: "LL-KA-2026-0103",
+      instructorId: 2, vehicleId: 1, slot: "11 am - 12 pm",
+      enrolledOn: "2026-11-02", status: "active", stage: "Learning",
+      sessionsDone: 3, totalSessions: 15, totalFee: 9000, paidFee: 3000,
+      documents: [] },
+    { id: 4, name: "Ananya", dob: "2006-01-15", gender: "Female", licenseNo: "LL-KA-2026-0104",
+      instructorId: 1, vehicleId: 2, slot: "10 am - 11 am",
+      enrolledOn: "2026-10-05", status: "active", stage: "Learning",
+      sessionsDone: 12, totalSessions: 15, totalFee: 9000, paidFee: 9000,
+      documents: [] },
+    { id: 5, name: "Kiran", dob: "2002-09-30", gender: "Male", licenseNo: "LL-KA-2026-0105",
+      instructorId: 2, vehicleId: 1, slot: "2 pm - 3 pm",
+      enrolledOn: "2026-11-10", status: "active", stage: "Learning",
+      sessionsDone: 1, totalSessions: 15, totalFee: 9000, paidFee: 0,
+      documents: [] },
+    { id: 6, name: "Nikhila", dob: "2004-05-20", gender: "Female", licenseNo: "LL-KA-2026-0090",
+      instructorId: 1, vehicleId: 2, slot: "4 pm - 5 pm",
+      enrolledOn: "2026-10-18", status: "deleted", stage: "Passed",
+      sessionsDone: 15, totalSessions: 15, totalFee: 9000, paidFee: 9000,
+      documents: [] },
+    { id: 7, name: "Nikhil", dob: "2003-08-08", gender: "Male", licenseNo: "LL-KA-2026-0085",
+      instructorId: 2, vehicleId: 1, slot: "5 pm - 6 pm",
+      enrolledOn: "2026-09-19", status: "deleted", stage: "Failed",
+      sessionsDone: 15, totalSessions: 15, totalFee: 9000, paidFee: 9000,
+      documents: [] }
+];

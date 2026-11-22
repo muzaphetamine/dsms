@@ -36,6 +36,13 @@ function buildMiniCalendar(container, year, month) {
 document.querySelector('.right-panel').addEventListener('click', (e) => {
     const cell = e.target.closest('[data-date]');
     if (!cell) return;
-    const [y, m, d] = cell.dataset.date.split('-').map(Number);
-    jumpToDate(new Date(y, m - 1, d));
+
+    if (typeof jumpToDate === 'function') {
+        // on home: scroll the calendar as before
+        const [y, m, d] = cell.dataset.date.split('-').map(Number);
+        jumpToDate(new Date(y, m - 1, d));
+    } else {
+        // on other pages: go to home showing that date
+        window.location.href = `home.html?date=${cell.dataset.date}`;
+    }
 });

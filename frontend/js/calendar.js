@@ -91,4 +91,13 @@ picker.addEventListener('change', () => {
     jumpToDate(new Date(y, m - 1, d));
 });
 
-jumpToDate(new Date());
+function dateFromUrl() {
+    const param = new URLSearchParams(window.location.search).get('date');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(param || '')) return null;
+    const [y, m, d] = param.split('-').map(Number);
+    const date = new Date(y, m - 1, d);
+    // reject impossible dates like 2026-02-31
+    return date.getMonth() === m - 1 ? date : null;
+}
+
+jumpToDate(dateFromUrl() || new Date());

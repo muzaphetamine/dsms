@@ -7,12 +7,12 @@
 body {
     height: 100vh;
     font-family: monospace;
-    background-color: #1f1f1f1f;
+    background-color: #1f1f1f;
 }
 
 h1 {
     margin: 10px;
-    font-size: 25x;
+    font-size: 25px;
     margin-bottom: 30px;
 }
 
@@ -109,4 +109,19 @@ a:hover {
 #date-picker:hover {
     cursor: pointer;
     box-shadow: 1px 1px gray;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a.active {
+    background-color: rgb(53, 52, 52);
+    border-left: 4px solid #6ec1f7; /* swap in the exact blue from .add-btn in add-menu.css */
+}
+
+.main-area {
+    grid-area: calendar;
+    overflow-y: auto;
+    padding: 20px;
 }
